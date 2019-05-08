@@ -1,0 +1,25 @@
+#ifndef BANK_ACCOUNT_H
+#define BANK_ACCOUNT_H
+
+#include "Account_Types.h"
+
+#include <iostream>
+#include <vector>
+
+
+using namespace std;
+
+class Bank_Account : public Account_Types
+{
+    public:
+        void withDraw()     = 0;
+        virtual void Deposite()     = 0;
+        virtual void setBalance()   = 0;
+
+    protected:
+
+
+    private:
+};
+
+#endif // BANK_ACCOUNT_H
